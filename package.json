@@ -1,0 +1,26 @@
+{
+  "name": "meteor1.3-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "meteor1.3-testing",
+  "dependencies": {
+    "dev": "^0.1.3",
+    "mocha": "^2.4.5",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-mounter": "^1.1.0",
+    "symbol-tree": "^3.1.4",
+    "whatwg-url": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0"
+  },
+  "scripts": {
+    "test": "mocha tests --compilers js:babel-core/register && eslint . --ext jsx --ext js"
+  },
+  "author": "John Rodney",
+  "license": "MIT"
+}
