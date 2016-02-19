@@ -12,7 +12,7 @@ export default class ExampleComponent extends React.Component {
   }
 
   _handleClick() {
-    const count = this.state.count + 2;
+    const count = this.state.count + 1;
     this.setState({ count });
   }
 
