@@ -1,5 +1,13 @@
 sudo: false
 language: node_js
+env:
+  - CXX=g++-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
 cache:
   directories:
     - node_modules
@@ -13,6 +21,7 @@ before_install:
 before_script:
   - npm prune
 script:
+  - npm install
   - npm test
   - eslint . --ext .jsx
 after_success:
@@ -20,3 +29,4 @@ after_success:
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
+
