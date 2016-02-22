@@ -19,10 +19,13 @@ before_install:
   - npm i -g npm@^2.0.0
   - npm install --save-dev eslint-config-airbnb eslint-plugin-react eslint@^2.2.0
   - curl https://install.meteor.com/ | sh
+  - npm install -g nvm
+  - nvm install stable
   - npm i -g gagarin
 before_script:
   - npm prune
 script:
+  - nvm use stable
   - npm install
   - npm test
 after_success:
