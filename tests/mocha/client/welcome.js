@@ -1,4 +1,4 @@
-import Welcome from '../client/welcome.jsx';
+import Welcome from '../../../client/welcome.jsx';
 const assert = require('assert');
 
 describe('Class', () => {
