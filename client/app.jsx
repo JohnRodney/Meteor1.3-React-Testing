@@ -1,11 +1,14 @@
 import React from 'react';
 import Counter from './counter.jsx';
 
-export const Layout = ({ content }) => (
-    <div>
-        <h1>My App</h1>
-        <hr />
-        <div>{content}</div>
-        <div><Counter /></div>
-    </div>
-);
+export default class Layout extends React.Component {
+  render() {
+    return (
+      <div className="app">
+          <h1>My App</h1>
+          <hr />
+          <div><Counter /></div>
+      </div>
+    );
+  }
+}

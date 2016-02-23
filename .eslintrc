@@ -12,6 +12,7 @@
   // or false to disallow overwriting.
   globals: {
     // Meteor core
+    "sample": true,
     "describe": false,
     "it": false,
     "before": false,
