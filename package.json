@@ -27,9 +27,7 @@
     "mocha-lcov-reporter": "^1.2.0"
   },
   "scripts": {
-    "test": "transpile node_modules/.bin/babel-istanbul --include-all-sources=true cover ./node_modules/.bin/_mocha tests/mocha --recursive --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage && eslint . --ext jsx --ext js && exit 0",
-    "transpile": "./node_modules/.bin/babel-node",
-    "istanbul": "transpile node_modules/.bin/babel-istanbul"
+    "test": "./node_modules/.bin/babel-node node_modules/.bin/babel-istanbul --include-all-sources=true cover ./node_modules/.bin/_mocha -- tests/mocha --recursive --report lcovonly && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage && eslint . --ext jsx --ext js && exit 0"
   },
   "author": "John Rodney",
   "license": "MIT"
