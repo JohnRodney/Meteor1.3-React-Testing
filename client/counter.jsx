@@ -3,7 +3,7 @@ import React from 'react';
 export default class ExampleComponent extends React.Component {
   constructor() {
     super();
-    this. _handleClick = this. _handleClick.bind(this);
+    this._handleClick = this._handleClick.bind(this);
     this.state = { count: 0 };
   }
 
