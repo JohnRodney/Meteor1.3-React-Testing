@@ -8,7 +8,7 @@ describe('React Component', () => {
   describe('Keeps count of how many times a button is clicked', () => {
     it('its default state should be 0', () => {
       const counter = TestUtils.renderIntoDocument(<Counter />);
-      assert.equal(0, Number(counter.getCount()));
+      assert.equal(0, counter.getCount());
     });
 
     it('its count should go up one time per click', () => {
@@ -17,7 +17,7 @@ describe('React Component', () => {
 
       [1, 2, 3, 4, 5].forEach((number) => {
         TestUtils.Simulate.click(counterButton);
-        assert.equal(number, Number(counter.getCount()));
+        assert.equal(number, counter.getCount());
       });
     });
   });
